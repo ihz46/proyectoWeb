@@ -1,3 +1,4 @@
+<!-- Esta página saldra si se loguea correctamente el usuario -->
 <%
 	String mensajeBienvenida = (String) request.getAttribute("mensajeBienvenida");
 	
