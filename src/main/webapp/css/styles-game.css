@@ -1,0 +1,28 @@
+*{
+    padding: 0; 
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: monospace;
+    color: #FFFFFF;
+    background-color: rgb(117, 117, 117);
+    font-size: 3em;
+    text-shadow: 11px 3px 11px rgba(66, 206, 58, 0.96);
+
+}
+
+canvas {
+  
+    background-image: url('/pruebaTecnica/images/estrellas.jpg');
+    border: 3px solid rgb(117, 117, 117);
+    margin: auto;
+    display: block;
+}
+
+bloques{
+    color:red;
+    border:1px solid black;
+    
+}

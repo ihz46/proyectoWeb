@@ -6,13 +6,7 @@
 <link rel="stylesheet" type="text/css" href="css/util.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
-<%
 
-String mensaje = (String)request.getAttribute("mensaje");
-if(mensaje != null){
-	%>
-	<p class="error"><%=mensaje %></p>
-<% }%>
 
 
 
@@ -73,6 +67,16 @@ if(mensaje != null){
 						<input type="submit" class="login100-form-btn" value="Entrar">
 							
 						
+					<%
+
+							String mensaje = (String)request.getAttribute("mensaje");
+							if(mensaje != null){
+								%>
+								<p class="error"><%=mensaje %></p>
+							<% }
+							
+							
+					%>
 					</div>
 	
 					

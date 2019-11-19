@@ -1,12 +1,13 @@
 <!-- Esta página saldra si se loguea correctamente el usuario -->
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	String mensajeBienvenida = (String) request.getAttribute("mensajeBienvenida");
 	
 
 %>
 
-<%@ page language="java" contentType="text/html; charset=US-ASCII"
-    pageEncoding="US-ASCII"%>
+
 <!DOCTYPE html>
 <html>
 <head>

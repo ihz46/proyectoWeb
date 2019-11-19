@@ -37,25 +37,28 @@ public class LoginController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// Recibimos parámetros
+		// 1. Recibimos parámetros
 
 		String nombre = (String) request.getParameter("nombre");
 		String contrasena = (String) request.getParameter("contrasena");
 		String idioma = (String) request.getParameter("idioma");
 		String recuerdame = (String) request.getParameter("recuerdame");
 		System.out.println(recuerdame);
-		// Creamos una variable para guardar el mensaje de bienvenida dependiendo del
-		// idioma
+		
+		/*
+		 * Creamos una variable para guardar el mensaje de bienvenida dependiendo del idioma
+		 */
+		
 
 		String mensajeBienvenida = "";
 
-		if (nombre.equalsIgnoreCase("admin") && contrasena.equalsIgnoreCase("admin")) {
+		if ("admin".equalsIgnoreCase(nombre) && "admin".equalsIgnoreCase(contrasena)) {
 			// erequest.setAttribute("recuerdame", );
 			switch (idioma) {
 			case "castellano":
 				mensajeBienvenida = "Hola " + nombre + ", bienvenido a la web. ";
 
-				if (recuerdame.equalsIgnoreCase("si")) {
+				if (recuerdame!=null) {
 
 					request.setAttribute("mensajeBienvenida", mensajeBienvenida + ". Tus datos serán recordados.");
 					request.getRequestDispatcher("login-exito.jsp").forward(request, response);
@@ -68,7 +71,7 @@ public class LoginController extends HttpServlet {
 
 			case "euskera":
 				mensajeBienvenida = "Kaixo " + nombre + ", ongi etorri webgunera.";
-				if (recuerdame.equalsIgnoreCase("si")) {
+				if (recuerdame!=null) {
 
 					request.setAttribute("mensajeBienvenida", mensajeBienvenida + ". Zure datuak gogoan izango dira.");
 					request.getRequestDispatcher("login-exito.jsp").forward(request, response);
@@ -81,7 +84,7 @@ public class LoginController extends HttpServlet {
 
 			case "ingles":
 				mensajeBienvenida = "Hello " + nombre + ", welcome to the web.";
-				if (recuerdame.equalsIgnoreCase("si")) {
+				if (recuerdame!=null) {
 
 					request.setAttribute("mensajeBienvenida", mensajeBienvenida + ". Your data will be remembered");
 					request.getRequestDispatcher("login-exito.jsp").forward(request, response);
@@ -93,8 +96,8 @@ public class LoginController extends HttpServlet {
 				break;
 
 			case "aleman":
-				mensajeBienvenida = " " + nombre + ", Willkommen im Internet. Ihre Daten werden gespeichert.";
-				if (recuerdame.equalsIgnoreCase("si")) {
+				mensajeBienvenida = " Hallo " + nombre + ", Willkommen im Internet. Ihre Daten werden gespeichert.";
+				if (recuerdame!=null) {
 
 					request.setAttribute("mensajeBienvenida", mensajeBienvenida + ". Ihre Daten werden gespeichert.");
 					request.getRequestDispatcher("login-exito.jsp").forward(request, response);
@@ -106,7 +109,7 @@ public class LoginController extends HttpServlet {
 
 			case "frances":
 				mensajeBienvenida = "Salut " + nombre + ", bienvenue sur le web.";
-				if (recuerdame.equalsIgnoreCase("si")) {
+				if (recuerdame!=null) {
 
 					request.setAttribute("mensajeBienvenida", mensajeBienvenida + ". Vos données seront mémorisées");
 					request.getRequestDispatcher("login-exito.jsp").forward(request, response);
