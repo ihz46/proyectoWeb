@@ -16,6 +16,7 @@ Orden:
 4. Layouts
 5. Clases para reutilizar
 6. Cosas especificas (id)
+7. fontawesome
 */
 
 
@@ -30,8 +31,7 @@ body {
     font-size: 16px;
     font-family: x Arial, sans-serif;
     margin: auto;
-    max-width: 1024px;
-    /*Se usa para coger el 100%*/
+  
 
 }
 
@@ -272,7 +272,7 @@ section {
     border-radius: 10px;
     margin-bottom: 30px;
     margin-top: 10px;
-    padding: 10px;
+    padding: 20px;
     background-color: rgb(114, 199, 220);
     -webkit-box-shadow: 12px 10px 15px 0px rgba(0, 0, 0, 0.32);
     box-shadow: 12px 10px 15px 0px rgba(0, 0, 0, 0.32);
@@ -288,7 +288,13 @@ section {
 
 }
 
+.contenedorBody{
+	  max-width: 1024px;
+    /*Se usa para coger el 100%*/
+}
+
 footer {
+	padding-left:50%;
     position: fixed;
     bottom: 0;
     background-color: rgb(114, 199, 220);
@@ -310,4 +316,19 @@ footer {
 
 .contenedor .texto p {
     text-align: justify;
+}
+
+
+/*fontawesome*/
+
+
+
+.fa-eye-slash{
+	color:red;
+	font-size:4em;
+}
+
+.fa-eye{
+	color:red;
+	font-size:4em;
 }

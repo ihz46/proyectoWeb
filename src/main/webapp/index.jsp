@@ -1,8 +1,10 @@
-<%@include file="includes/header.jsp" %>
-<body>
-<%@include file="includes/parallax.jsp" %>
-<%@include file="includes/nav.jsp" %> 
+<%String titulo = "HelloWeb | Inicio"; %>
+<%@include file="/includes/header.jsp" %>
+<%@include file="/includes/parallax.jsp" %>
+<%@include file="/includes/nav.jsp" %> 
 
+<span class="fas fa-eye-slash fa-spin"></span>
+<span class="fas fa-eye"></span>
 <section>
         <h2>Ejercicio HTML5, CSS3 y JAVASCRIPT</h2>
         <h2>ALUMN@S IPARTEK</h2>
@@ -17,7 +19,7 @@
         
        
         <div>
-            <button class="boton"  height="10px" width="50px" onclick="buscarVoluntario()">Buscar Voluntario</button>
+            <button class="boton"  onclick="buscarVoluntario()">Buscar Voluntario</button>
         </div>
     </section>
 
@@ -70,10 +72,12 @@
 
         </table>
     </div>
+	
+	
+	
+<%@include file="includes/footer.jsp" %> 
 
 
 
 
-</body>
-</html>
 

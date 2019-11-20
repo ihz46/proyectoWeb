@@ -1,11 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+</main>
 
+<footer>
+	<p>IPARTEK SCOOP</p>
+	<a href="#top">Ir Arriba</a>
+</footer>
+
+<!--Script  -->
+<script src="js/main.js"></script>
+</div>
 </body>
 </html>

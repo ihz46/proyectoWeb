@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-----ESTO ES UN COMENTARIO EN HTML 5-->
+<html lang="es">
+<!---Esto es un atributo de tipo lang e indica que estamos en una web en castellano-->
+
+<head>
+
+    <link rel="icon" type="image/jpg" href="images/logoIpartekWeb.jpg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectores básicos</title>
+
+    <!-- BASE PARA MAPEAR TODAS LAS RUTAS DE ESTA PÁGINAS-->
+    <base href="/pruebaTecnica/">
+    <!-- ESTILOS-->
+    <link rel="stylesheet" href="css/styles.css">
+
+
+
+</head>
+
+<body>
+
+  
+
+    <style>
+        /*Esto es un selector descendente*/
+        .container p {
+            color: rgb(31, 0, 167);
+        }
+
+        .container p span {
+            background-color: cyan;
+        }
+
+        p .especial {
+            font-weight: 600;
+            /*bold, negrita*/
+        }
+
+        /* Selecciona solo los párrafos con la clase ‘especial¡ no es descendente.*/
+        .especial {
+            color: purple;
+            background-color: rgb(20, 78, 117);
+        }
+    </style>
+
+    <div class="parallax">
+        <img class="centrado"  src="images/logo-ipartek.png">
+        <h1 class="subrayado">Selectores Básicos CSS</h1>
+
+    </div>
+
+    <nav class="nav-bar">
+        <a href="index.html">Inicio</a>
+        <a href="ejemplos/css/animaciones.html">Animacion</a>
+        <a href="ejemplos/css/basico.html">CSS Básico</a>
+        <a href="ejemplos/html/etiquetasBasicas.html">Etiquetas Básicas</a>
+        <a href="ejemplos/css/especificidad.html">Especificidad</a>
+        <a href="ejemplos/css/selectoresBasicos.html">Selectores Básicos</a>
+        <a href="ejemplos/css/selectoresAvanzados.html">Selectores Avanzados</a>
+        <a href="ejemplos/css/pseudoselectores.html">Pseudoselectores</a>
+        <a href="ejemplos/html/box-model.html">Box Model</a>
+    
+    </nav>
+    
+    <h2 class="subrayado">Selector de etiqueta</h2>
+    <code>
+        h1{
+            color:red;
+        }
+
+        p{
+            font-family: Times New Roman;
+        }
+
+    </code>
+    <p>Es posible también en un mismo selector tener varias etiquetas, de manera que todas tengan el mismo estilo</p>
+    <br>
+    <h2 class="subrayado">Selector</h2>
+
+
+    <a href="https://code.tutsplus.com/es/tutorials/the-30-css-selectors-you-must-memorize--net-16048">Los 30 selectores
+        que debes conocer</a>
+    <br>
+    <h2>Selector descendente A B</h2>
+    <div class="container">
+        <p>Vamos a dar estilos para estos párragos que estan dentro de un <code>div.container</code></p>
+        <p>Lorem, ipsum dolor sit amet <span>adipisicing</span> elit. Assumenda, quae quidem, similique repellat quasi
+            nobis at nihil sequi cum voluptates recusandae? Adipisci quia neque numquam rem architecto necessitatibus
+            reprehenderit sit.</p>
+        <p class="especial">Voluptatem, saepe <span class="especial">quasi in minus</span> alias, dignissimos dolorum
+            suscipit <span>laboriosam</span> nulla tempore nisi deleniti earum. Perferendis magni dolores ratione, amet,
+            rerum soluta saepe nulla quisquam possimus quod inventore? Vero, id?</p>
+
+    </div>
+
+
+
+
+
+
+    <!-- JAVASCRIPT-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
