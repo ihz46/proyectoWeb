@@ -13,5 +13,6 @@
         <a href="ejercicios/html/formulario.jsp>">Formulario</a>
         <a href="calculadora.jsp">Calculadora</a>
         <a href="login.jsp">Login</a>
+        <a href="ejercicios/css/flexbox.jsp">Flexbox</a>
 </nav>
 <main>

@@ -1,4 +1,5 @@
 <%String titulo = "HelloWeb | Inicio"; %>
+<%String nombreTitulo = "IPARTEK 2019-2020"; %>
 <%@include file="/includes/header.jsp" %>
 <%@include file="/includes/parallax.jsp" %>
 <%@include file="/includes/nav.jsp" %> 

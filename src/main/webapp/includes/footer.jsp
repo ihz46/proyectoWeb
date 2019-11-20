@@ -8,5 +8,6 @@
 <!--Script  -->
 <script src="js/main.js"></script>
 </div>
+</main>
 </body>
 </html>

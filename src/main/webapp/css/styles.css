@@ -2,7 +2,7 @@
 HOJA DE ESTILOS 
 Esto es un comentario de bloque en CSS
 
-@autor: i√±igo
+@autor: iÒigo
 @version: 1.0
 @tags: css
 @licencia: mit
@@ -10,7 +10,7 @@ Esto es un comentario de bloque en CSS
 
 Orden:
 
-1. Reset B√°sico
+1. Reset B·sico
 2. @keyframes
 3. Etiquetas estilos generales
 4. Layouts
@@ -19,9 +19,14 @@ Orden:
 7. fontawesome
 */
 
+/*Esto es nuevo de CSS3 y sirve para importar ficheros*/
 
+/*@import url("reset.css");*/
 
-/*1. Reset b√°sico para eliminar estilos de todos los browser-user-agent)*/
+@import url("print.css") print;
+@import url("normalice.css");
+
+/*1. Reset b·sico para eliminar estilos de todos los browser-user-agent)*/
 * {
     margin: 0;
     padding: 0;
@@ -182,6 +187,7 @@ td:hover {
 
 
 .parallax h1 {
+	margin-top:0px;
     color: rgb(12, 38, 97);
     text-decoration: underline;
     text-transform: uppercase;
@@ -316,6 +322,7 @@ footer {
 
 .contenedor .texto p {
     text-align: justify;
+    margin:auto;
 }
 
 
