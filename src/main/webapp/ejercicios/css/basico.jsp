@@ -1,7 +1,13 @@
-<%String titulo = "Básico | Inicio"; %>
-<%@include file="/src/main/webapp/includes/header.jsp" %>
-<%@include file="/src/main/webapp/includes/parallax.jsp" %>
-<%@include file="/src/main/webapp/includes/nav.jsp" %> 
+<%
+
+String titulo = "Básico | Inicio"; 
+String nombreTitulo = "basico";
+%>
+
+
+<%@include file="/includes/header.jsp" %>
+<%@include file="/includes/parallax.jsp" %>
+<%@include file="/includes/nav.jsp" %> 
 
  <section>
     <h2 class="texto-centrado">Chuleta de CSS</h2>
@@ -12,4 +18,4 @@
 
 
 
-<%@include file="/src/main/webapp/includes/footer.jsp" %>
+<%@include file="/includes/footer.jsp" %>

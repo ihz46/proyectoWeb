@@ -1,4 +1,5 @@
 <%String titulo = "Animaciones | Inicio"; %>
+<%String nombreTitulo = "animaciones"; %>
 <%@include file="/includes/header.jsp" %>
 <%@include file="/includes/parallax.jsp" %>
 <%@include file="/includes/nav.jsp" %> 
