@@ -1,4 +1,4 @@
-<%String titulo = "HelloWeb | Box-Model"; %>
+<%String titulo = "HelloWeb | BOX MODEL"; %>
 <%String nombreTitulo = "Box Model"; %>
 <%@include file="/includes/header.jsp" %>
 <%@include file="/includes/parallax.jsp" %>

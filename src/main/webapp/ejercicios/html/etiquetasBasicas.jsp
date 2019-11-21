@@ -1,10 +1,12 @@
-<%String titulo = "HelloWeb | Etiquetas Básicas HTML"; %>
+<%String titulo = "HelloWeb | ETIQUETAS BÁSICAS HTML"; %>
 <%String nombreTitulo = "Etiquetas básicas"; %>
 
 
 <%@include file="/includes/header.jsp" %>
 <%@include file="/includes/parallax.jsp" %>
 <%@include file="/includes/nav.jsp" %> 
+
+
 
 
  <style>

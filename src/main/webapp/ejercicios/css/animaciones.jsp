@@ -4,6 +4,8 @@
 <%@include file="/includes/parallax.jsp" %>
 <%@include file="/includes/nav.jsp" %> 
 
+es/nav.jsp" %> 
+
  <br>
 
 

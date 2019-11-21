@@ -1,3 +1,12 @@
+<%String titulo = "HelloWeb | FORMULARIO"; %>
+<%String nombreTitulo = "Formulario"; %>
+
+
+<%@include file="/includes/header.jsp" %>
+<%@include file="/includes/parallax.jsp" %>
+<%@include file="/includes/top-menu.jsp" %> sp" %> 
+
+
 
     <style>
         form {
@@ -92,3 +101,7 @@
         <input type="submit" value="Enviar">
 
     </form>
+    
+    
+  
+    <%@include file="/includes/footer.jsp" %> 

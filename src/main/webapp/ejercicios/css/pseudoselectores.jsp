@@ -1,5 +1,5 @@
-<%String titulo = "HelloWeb | ESPECIFICIDAD"; %>
-<%String nombreTitulo = "Especificidad"; %>
+<%String titulo = "HelloWeb | PSEUDOSELECTORES"; %>
+<%String nombreTitulo = "PSEUDOSELECTORES"; %>
 <%@include file="/includes/header.jsp" %>
 <%@include file="/includes/parallax.jsp" %>
 <%@include file="/includes/top-menu.jsp" %>  

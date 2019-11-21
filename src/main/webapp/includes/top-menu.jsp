@@ -11,9 +11,11 @@
 		    </button>
 		    
 		    <div class="dropdown-content">
-		      <a href="#">Etiquetas Básicas</a>
-		      <a href="#">Link 2</a>
-		      <a href="#">Link 3</a>
+		      <a href="ejercicios/html/etiquetasBasicas.jsp">Etiquetas Básicas</a>
+		      <a href="ejercicios/html/formulario.jsp">Formulario</a>
+		      <a href="ejercicios/html/box-model.jsp">Box model</a>
+		     
+		    
 		    </div>
 		  </div>
 <!-- ----------------MENÚ CSS ---------------------------------------->
@@ -31,7 +33,9 @@
 		      <a href="ejercicios/css/selectoresAvanzados.jsp">Selectores Avanzados</a>
 		      <a href="ejercicios/css/pseudoselectores.jsp">Pseudoselectores</a>
 		      <a href="ejercicios/css/flexbox.jsp">Flexbbox</a>
-		    
+		      <a href="ejercicios/html/datatable.jsp">Data table</a>
+		      <a href="ejercicios/html/posicionamiento.jsp">Posicionamiento</a>
+		    	
 		    </div>
 		  </div>
 		  
@@ -52,7 +56,7 @@
 		 
 		  
 		  
-		  <a href="#about">MORE</a>
+		  <a href="webs.jsp">WEBS</a>
 		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 		</nav> 
 
