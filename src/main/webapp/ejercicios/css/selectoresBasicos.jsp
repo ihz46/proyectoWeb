@@ -1,7 +1,9 @@
-<%String titulo = "Selectores B√°sicos | Inicio"; %>
-<%@include file="/src/main/webapp/includes/header.jsp" %>
-<%@include file="/src/main/webapp/includes/parallax.jsp" %>
-<%@include file="/src/main/webapp/includes/nav.jsp" %> 
+<%String titulo = "HelloWeb | SELECTORES B¡SICOS"; %>
+<%String nombreTitulo = "Selectores B·sicos"; %>
+<%@include file="/includes/header.jsp" %>
+<%@include file="/includes/parallax.jsp" %>
+<%@include file="/includes/top-menu.jsp" %>  
+
  <style>
         /*Esto es un selector descendente*/
         .container p {
@@ -24,6 +26,8 @@
         }
     </style>
     
+    
+    <section>
      <h2 class="subrayado">Selector de etiqueta</h2>
     <code>
         h1{
@@ -37,8 +41,9 @@
     </code>
     <p>Es posible tambi√©n en un mismo selector tener varias etiquetas, de manera que todas tengan el mismo estilo</p>
     <br>
+    </section>
+    
     <h2 class="subrayado">Selector</h2>
-
 
     <a href="https://code.tutsplus.com/es/tutorials/the-30-css-selectors-you-must-memorize--net-16048">Los 30 selectores
         que debes conocer</a>
@@ -59,5 +64,5 @@
 
 
 
-
-<%@include file="/src/main/webapp/includes/footer.jsp" %>
+	
+<%@include file="/includes/footer.jsp" %> 

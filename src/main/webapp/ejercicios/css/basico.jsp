@@ -1,13 +1,9 @@
-<%
-
-String titulo = "Básico | Inicio"; 
-String nombreTitulo = "basico";
-%>
-
-
+<%String titulo = "HelloWeb | CHULETA CSS"; %>
+<%String nombreTitulo = "Selectores Básicos"; %>
 <%@include file="/includes/header.jsp" %>
 <%@include file="/includes/parallax.jsp" %>
-<%@include file="/includes/nav.jsp" %> 
+<%@include file="/includes/top-menu.jsp" %>  
+
 
  <section>
     <h2 class="texto-centrado">Chuleta de CSS</h2>

@@ -2,7 +2,7 @@
 <%String nombreTitulo = "FLEXBOX"; %>
 <%@include file="/includes/header.jsp" %>
 <%@include file="/includes/parallax.jsp" %>
-<%@include file="/includes/nav.jsp" %> 
+<%@include file="/includes/top-menu.jsp" %> 
 
 <section>
 <ul>
