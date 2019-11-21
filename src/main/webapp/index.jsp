@@ -2,10 +2,13 @@
 <%String nombreTitulo = "IPARTEK 2019-2020"; %>
 <%@include file="/includes/header.jsp" %>
 <%@include file="/includes/parallax.jsp" %>
-<%@include file="/includes/nav.jsp" %> 
+<%@include file="/includes/top-menu.jsp" %> 
 
-<span class="fas fa-eye-slash fa-spin"></span>
-<span class="fas fa-eye"></span>
+<!-- <span class="fas fa-eye-slash fa-spin"></span>- 
+
+<span class="fas fa-eye"></span>-->
+
+
 <section>
         <h2>Ejercicio HTML5, CSS3 y JAVASCRIPT</h2>
         <h2>ALUMN@S IPARTEK</h2>
@@ -73,7 +76,13 @@
 
         </table>
     </div>
-	
+    
+<p class="parrafoLorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius necessitatibus sint vitae iste quia laboriosam ut consectetur molestiae architecto velit odit animi et omnis laudantium quos sapiente temporibus deserunt atque?</p>
+<p class="parrafoLorem">Voluptatem commodi error accusamus voluptatibus adipisci repellendus reiciendis repudiandae! Laborum provident corporis magnam ex ipsa accusamus culpa aspernatur accusantium nobis explicabo rerum placeat nisi voluptatibus tempore dolor est excepturi. Eligendi.</p>
+<p class="parrafoLorem">Earum dolore deserunt illum voluptates quis ipsa eos itaque dolores consequatur atque iste reiciendis quidem saepe. Voluptates delectus laboriosam a debitis aut obcaecati repellat eum hic commodi dolor neque vel!</p>
+<p class="parrafoLorem">Porro ut eos fuga. Reprehenderit recusandae error quibusdam deleniti dolorum amet eligendi id illum perspiciatis cupiditate distinctio vero ea accusamus perferendis dignissimos illo harum. Dolorum distinctio maiores deserunt libero nemo!</p>
+<p class="parrafoLorem">Unde odio sint tempore laudantium corrupti necessitatibus accusantium. Veniam corporis ipsam cupiditate quasi et facere architecto fugiat consequuntur quidem eveniet quibusdam iure illum facilis vel culpa fugit aspernatur ullam cum!</p>
+<p class="parrafoLorem">Dolores enim quae quis quaerat quia facere ullam at cumque sunt fugit cupiditate quos optio nam repellat hic sequi quas numquam deleniti minima reiciendis dolorum vitae in rerum cum modi?</p>
 	
 	
 <%@include file="/includes/footer.jsp" %> 

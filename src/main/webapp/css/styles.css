@@ -26,70 +26,31 @@ Orden:
 @import url("print.css") print;
 @import url("normalice.css");
 
+
+
+
 /*1. Reset b�sico para eliminar estilos de todos los browser-user-agent)*/
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-size: 16px;
-    font-family: x Arial, sans-serif;
-    margin: auto;
-  
-
-}
-
-main {
-    margin: auto;
-    margin-bottom: 100px;
-    width: 1024px;
-
-}
-
-code {
-    color: red;
-    background-color: lightgray;
-    font-family: cursive;
-
-}
-
-
-
-h1 {
-    color: #09C;
-    font-size: 3em;
-    text-align: center;
-
-}
-
-h2,
-h3 {
-    text-align: center;
-
+    font-family:Berlin Sans FB;
 }
 
 a {
-    color: rgb(11, 35, 90);
+   
     margin: auto;
-
-    font-weight: 800;
+    font-weight: 600;
 }
 
-input[type="text"] {
-    padding: 2px 0 2px 5px;
+a:hover {
+    background-color: lightblue;
 }
 
-input[type="text"]:valid {
-    color: green;
-    border: 2px solid green;
 
-}
-
-input[type="text"]:invalid {
-    color: red;
-    border: 2px solid red;
-
+p{
+	line-height:20px;
+	text-align: justify;
+		
 }
 
 form {
@@ -105,25 +66,20 @@ form label {
 
 }
 
-input[type="submit"] {
-    background-color: #0099CC;
-    box-shadow: 2px 2px 10px #666;
-    font-family: sans-serif;
-    font-size: 1.5em;
+code {
+    color: red;
+    background-color: lightgray;
+    font-family: cursive;
+
 }
 
-a:hover {
-    background-color: lightblue;
+/**Tablas*********/
+
+
+
+tabla{
+	width:100%;
 }
-
-
-table {
-    width: 50%;
-    margin: auto;
-}
-
-
-
 
 
 td {
@@ -138,6 +94,146 @@ td {
 td:hover {
     background-color: violet;
 }
+
+
+
+/**Listas******/
+
+ol,ul,dl{
+	padding-left:20px;
+	margin-top:20px;
+}
+
+ul li{
+	
+	list-style-type:circle;
+}
+
+ol li{
+	list-style-type:upper-roman;
+	line-height:20px;
+}
+
+/**Layouts **********************************/
+
+body {
+    font-size: 16px;
+    font-family: x Arial, sans-serif;
+   
+}
+
+main {
+    margin: auto;
+    margin-bottom: 100px;
+   	max-width:1024px;
+   	min-height:1000px;
+
+}
+
+footer {
+	margin:auto;
+   	max-width:1024px;
+   	color: white;
+ 	text-transform: uppercase;
+ 	padding-top:10px;
+ 	text-align:center;
+   	
+    
+}
+
+.footer-wrapper{
+	
+	background-color: rgb(12, 38, 97);
+	width: 100%;
+	bottom: 0;
+	border: 2px solid rgb(114, 199, 220);
+	border-radius: 20px 20px 0px 0px;
+	
+
+	
+	
+	
+}
+
+nav {
+      
+   max-width:1024px;
+   margin:auto;
+   color:white;
+   text-align:center;
+   font-size:20px;
+    
+}
+
+.nav-wrapper{
+	 background-color: rgb(12, 38, 97);
+	 border: 2px solid rgb(114, 199, 220);
+	 border-radius: 0px 0px 20px 20px;
+	 text-align:center;
+	 max-width:100%;
+	 z-index: 999;
+	
+}
+
+nav a{
+	color: rgb(114, 199, 220);
+    margin: auto;
+	font-weight: 500px;
+	text-transform: uppercase;
+}
+
+
+section {
+    border: 3px solid rgb(12, 38, 97);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgb(114, 199, 220);
+    -webkit-box-shadow: 12px 10px 15px 0px rgba(0, 0, 0, 0.32);
+    box-shadow: 12px 10px 15px 0px rgba(0, 0, 0, 0.32);
+}
+
+
+/*Parallax****************************/
+
+.parallax {
+    background-image: url('/helloweb/images/imagenOffice.jpg');
+    height:400px;
+    
+   
+    /*Estático, no se mueve con el scroll*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /*Coje todo el ancho de pantalla*/
+    border: 2px solid rgb(12, 38, 97);
+    border-radius: 5px;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0, 0, 0, 0.15), 2px 1px 6px rgba(34, 31, 206, 0.45);
+	width:100%;
+}
+
+.parallax img {
+    display: block;
+    margin: auto;
+    padding-top: 130px;
+    width:400px;
+    height:120px;
+}
+
+
+.parallax h1 {
+	margin-top:0px;
+	font-size:4em;
+    color: rgb(12, 38, 97);
+    text-align:center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/*Clases***********/
 
 .box {
     box-sizing: border-box;
@@ -164,34 +260,7 @@ td:hover {
     border: 2px solid teal;
 }
 
-.parallax {
-    background-image: url('/helloweb/images/imagenOffice.jpg');
-    height: 380px;
-    background-attachment: fixed;
-    /*Estático, no se mueve con el scroll*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*Coje todo el ancho de pantalla*/
-    border: 2px solid rgb(12, 38, 97);
-    border-radius: 5px;
-    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0, 0, 0, 0.15), 2px 1px 6px rgba(34, 31, 206, 0.45);
 
-}
-
-.parallax img {
-    display: block;
-    margin: auto;
-    padding-top: 100px;
-}
-
-
-.parallax h1 {
-	margin-top:0px;
-    color: rgb(12, 38, 97);
-    text-decoration: underline;
-    text-transform: uppercase;
-}
 
 .boton {
     background-color: rgb(114, 199, 220);
@@ -226,22 +295,11 @@ td:hover {
     height: 900px;
 }
 
+/**Texto editado*********/
+
 .tachado {
     text-decoration: line-through;
 }
-
-.parrafoLorem {
-    font-size: 14px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #0099CC;
-}
-
-.tituloListas {
-    color: red;
-    text-decoration: underline;
-}
-
-
 
 .subrayado {
     text-decoration: underline;
@@ -251,39 +309,25 @@ td:hover {
     text-align: center;
 }
 
-.nav-bar {
-    height: 50px;
-    border-radius: 0px 0px 20px 20px;
-    background-color: rgb(12, 38, 97);
-    text-align: center;
-    border: 2px solid rgb(114, 199, 220);
-    position: sticky;
-
-
+.tituloListas {
+    color: red;
+    text-decoration: underline;
 }
 
-
-.nav-bar a {
-    color: white;
-    text-transform: capitalize;
+.parrafoLorem {
+	padding-top:20px;
+    font-size: 14px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #0099CC;
 }
+
 
 .centrado {
     display: block;
     margin: 50px;
 }
 
-section {
-    border: 3px solid rgb(12, 38, 97);
-    border-radius: 10px;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    padding: 20px;
-    background-color: rgb(114, 199, 220);
-    -webkit-box-shadow: 12px 10px 15px 0px rgba(0, 0, 0, 0.32);
-    box-shadow: 12px 10px 15px 0px rgba(0, 0, 0, 0.32);
-}
-
+/***Container***********/
 
 .contenedor .texto {
     background-color: #00000052;
@@ -294,26 +338,14 @@ section {
 
 }
 
-.contenedorBody{
-	  max-width: 1024px;
-    /*Se usa para coger el 100%*/
-}
-
-footer {
-	padding-left:50%;
-    position: fixed;
-    bottom: 0;
-    background-color: rgb(114, 199, 220);
-    padding: 20px;
-    width: 100%;
-}
-
 .contenedor:hover .texto {
     bottom: 0%;
     color: white;
     transition: all 2s ease-in-out;
 
 }
+
+
 
 .contenedor h3 {
     color: white;
@@ -323,6 +355,31 @@ footer {
 .contenedor .texto p {
     text-align: justify;
     margin:auto;
+}
+
+/**Inputs*********/
+
+input[type="text"] {
+    padding: 2px 0 2px 5px;
+}
+
+input[type="text"]:valid {
+    color: green;
+    border: 2px solid green;
+
+}
+
+input[type="text"]:invalid {
+    color: red;
+    border: 2px solid red;
+
+}
+
+input[type="submit"] {
+    background-color: #0099CC;
+    box-shadow: 2px 2px 10px #666;
+    font-family: sans-serif;
+    font-size: 1.5em;
 }
 
 
@@ -339,3 +396,21 @@ footer {
 	color:red;
 	font-size:4em;
 }
+
+/*Icono de github*/
+
+.fa-github{
+	
+	text-align:center;
+	font-size:4em;
+	color:white;
+	
+}
+
+.fa-github a:hover{
+	color:white;
+}
+
+
+
+
