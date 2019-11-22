@@ -138,4 +138,6 @@
 	<img src="images/ordenFinal.PNG">
 	
 </section>
+
+
 <%@include file="/includes/footer.jsp" %> 

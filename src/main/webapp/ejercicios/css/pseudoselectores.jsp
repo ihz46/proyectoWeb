@@ -4,7 +4,7 @@
 <%@include file="/includes/parallax.jsp" %>
 <%@include file="/includes/top-menu.jsp" %>  
 
-
+<main>
 
 
     <p style="color: red;font-size: 20px;">Este párrafo es un estilo en línea</p>
@@ -54,7 +54,7 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-
+</main>
 
 	
 <%@include file="/includes/footer.jsp" %> 

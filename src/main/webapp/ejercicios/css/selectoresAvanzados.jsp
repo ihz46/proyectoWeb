@@ -5,6 +5,7 @@
 <%@include file="/includes/top-menu.jsp" %>  
 
 
+<main>
  <h2>Soporte de navegadores para desarrollo web</h2>
     <a href="https://caniuse.com/">CANIUSE</a>
 
@@ -26,6 +27,6 @@
 
 
 
-
+</main>
 	
 <%@include file="/includes/footer.jsp" %> 

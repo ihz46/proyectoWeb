@@ -1,8 +1,10 @@
-<%String titulo = "HelloWeb | SELECTORES BÁSICOS"; %>
-<%String nombreTitulo = "Selectores Básicos"; %>
+<%String titulo = "HelloWeb | SELECTORES Bï¿½SICOS"; %>
+<%String nombreTitulo = "Selectores Bï¿½sicos"; %>
 <%@include file="/includes/header.jsp" %>
 <%@include file="/includes/parallax.jsp" %>
 <%@include file="/includes/top-menu.jsp" %>  
+
+
 
  <style>
         /*Esto es un selector descendente*/
@@ -25,6 +27,8 @@
             background-color: rgb(20, 78, 117);
         }
     </style>
+    
+ <main>
     
     
     <section>
@@ -63,6 +67,6 @@
 
 
 
-
+</main>
 	
 <%@include file="/includes/footer.jsp" %> 

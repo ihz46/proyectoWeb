@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/styles-top-menu.css?time=<%=System.currentTimeMillis()%>">
+
 
  <div class="wrapper-topnav">
 		<nav class="topnav" id="myTopnav">
@@ -35,6 +35,7 @@
 		      <a href="ejercicios/css/flexbox.jsp">Flexbbox</a>
 		      <a href="ejercicios/html/datatable.jsp">Data table</a>
 		      <a href="ejercicios/html/posicionamiento.jsp">Posicionamiento</a>
+		      <a href="ejercicios/css/media-querys.jsp">Media Querys</a>
 		    	
 		    </div>
 		  </div>
@@ -57,10 +58,12 @@
 		  
 		  
 		  <a href="webs.jsp">WEBS</a>
-		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		  <a href="javascript:void(0);" class="icon" onclick="responsiveTopNav()">&#9776;</a>
 		</nav> 
 
 </div>
+
+<main>
 
 
 

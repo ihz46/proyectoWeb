@@ -2,7 +2,7 @@
 <%String nombreTitulo = "Box Model"; %>
 <%@include file="/includes/header.jsp" %>
 <%@include file="/includes/parallax.jsp" %>
-<%@include file="/includes/nav.jsp" %> 
+<%@include file="/includes/top-menu.jsp" %> 
 
 
 
@@ -28,16 +28,38 @@
             /*padding: 20px shorthand: 4lados*/
 
         }
+        
+        
+			
+		.content-box { 
+		  box-sizing: content-box; 
+		  /* Ancho  total: 160px + (2 * 20px) + (2 * 8px) = 216px
+		     Altura total: 80px + (2 * 20px) + (2 * 8px) = 136px
+		     Ancho de la caja de contenido: 160px
+		     Altura de la caja de contenido: 80px */
+		}
+		
+		.border-box { 
+		 
+		  box-sizing: border-box;
+		  /* Ancho total: 160px
+		     Altura total: 80px
+		     Ancho de la caja de contenido: 160px - (2 * 20px) - (2 * 8px) = 104px
+		     Altura de la caja de contenido: 80px - (2 * 20px) - (2 * 8px) = 24px */
+		}
 
         
-    </style>
+</style>
     
     <p>Toda etiqueta de HTML tiene una estructura de caja</p>
 
     <div class="box">1</div>
     <div class="box">2</div>
+    <br>
+    
+    
     <section>
-        <h2 class="texto-centrado">Display</h2>
+        <h2>Display</h2>
         <p><code>Display es el atributo para gestionar si es línea o bloque. Existen muchos más tipos de display, ejemplo:flexbox</code>
         </p>
         <p>trick: usar el inspector para verlo</p>
@@ -58,9 +80,25 @@
             Distinctio,
             mollitia!</p>
     </section>
-
-
+    
     <section>
+    	<h2>Box Sizing</h2>
+    	<p>Box sizing es una propiedad que indica como el user agent del navegador debe calcular el ancho y alto total de un elemento</p>
+    	<p>Existen dos tipos de comportamiento.</p>
+    	
+    	<ol>
+    		<li><code>content-box</code> En este caso el borde que se le añade a un contenedor no esta incluido en el tamaño del mismo, sino que se debe de sumar. Por ejemplo si tenemos un contenedor con 100px de ancho y le añadimos un borde de 2px, el contenedor contará 100px más los 2px de cada borde, en total 104px.</li>
+    		<li><code>content-border</code>En este caso, el user agent calcula que el contenedor comprende el tamaño de borde. Por ejemplo, si creamos un contenedor de 100px de ancho y le añadimos 2px de border, el contará 100px de ancho.</li>
+    	</ol>
+    	
+    	<div class="box content-box"></div>
+    	
+    	<div class="box content-border"></div>
+    </section>
+    
+    
+    <section>
+    
         <h2>Visibilidad</h2>
         <p>Existen dos maneras de ocultar elementos en html</p>
         <p>1. Usando <code>visibility</code></p>

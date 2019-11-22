@@ -19,4 +19,3 @@
 	        <a href="includes/top-menu.jsp">Menú</a>
 	</nav>
 </div>
-<main>
