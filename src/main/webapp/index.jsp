@@ -5,10 +5,7 @@
 
 <%@include file="/includes/top-menu.jsp" %> 
 
-<!-- <span class="fas fa-eye-slash fa-spin"></span>- 
 
-<span class="fas fa-eye"></span>-->
-<main>
 	<section>
 	        <h2 class="texto-centrado">Ejercicio HTML5, CSS3 y JAVASCRIPT</h2>
 	        

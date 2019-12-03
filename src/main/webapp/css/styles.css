@@ -152,7 +152,7 @@ Orden:
 		
 		footer {
 			margin:auto;
-		   	max-width:1024px;
+		   	width:100%;
 		   	color: white;
 		 	text-transform: uppercase;
 		 	padding-top:10px;
