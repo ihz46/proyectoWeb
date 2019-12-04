@@ -18,6 +18,9 @@
 	 
 	 <!-- ESTILOS-->
 	 
+	 <!--  BOOTSTRAP -->
+	 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" /> -->
+	 
 	 <!-- TOP MENÚ -->
 	 <link rel="stylesheet" href="css/styles-top-menu.css?time=<%=System.currentTimeMillis()%>">
 	 

@@ -65,7 +65,11 @@
 				 <i class=" fa fa-caret-down"></i>
 				</button>
 				<div class="dropdown-content">
-				<a href="convertir.jsp">CONVERSIÓN DE METROS A PIES</a></div>
+					<a href="convertir.jsp">CONVERSIÓN DE METROS A PIES</a>
+				</div>
+				<div class="dropdown-content">
+					<a href="info-jsp.jsp">JSP Y SERVLETS</a>
+				</div>
 			</div>
 		</nav> 
 

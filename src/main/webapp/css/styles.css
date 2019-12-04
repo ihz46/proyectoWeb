@@ -20,6 +20,8 @@ Orden:
 7. fontawesome
 8. Media querys
 
+
+
 */
 
 /*Esto es nuevo de CSS3 y sirve para importar ficheros*/
@@ -46,6 +48,12 @@ Orden:
 				padding:5px;
 		}
 		
+		img {
+		
+			width: 100%;
+		    height: auto;
+		
+		}
 		
 		a {
 		    margin: auto;
@@ -442,6 +450,18 @@ Orden:
 		}
 		
 		
+	/** ESTILOS PARA LA PAGINA DE INFO JSP **/
 		
+	#info-jsp h1{
 		
+		color:blue;
+		text-align:center;
+		
+	}	
+	
+	
+	
+	#info-jsp body{
+		font-size:18px;
+	}
 		
