@@ -8,6 +8,7 @@
 	<link rel="icon" type="image/jpg" href="images/icons/logoIpartekWeb.jpg" />
 	 <base href="/helloweb/"></base>
 	 <title><%=titulo%></title>
+	 
 	 <!--  DATATABLES -->
 	 
 	 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"/>
@@ -35,7 +36,31 @@
 </head>
 
 <body id="#top">
+<!-- Informamos sobre la sesión del usuario -->
+<section id="usuario">
+	<%
+		String usuario = (String) session.getAttribute("usuarioLogeado");
+		String idioma = (String) session.getAttribute("idioma");
+		
+		
+	%>
+		
+	<% if(usuario==null){
+			%><p>No estas logueado, por favor, inicia sesión <code><a href="login.jsp" target="_blank">Login</a></code></p>
+			
+		<%}else{%>
+				<p>Usuario: <%=usuario %></p>
+	
+				<p>Idioma: <%=idioma %></p> 
+				<p><a href="salir">Cerrar Sesión</a>
+		<%} %>
+	
+	
+	
 
+	
+
+</section>
 
 	
 	

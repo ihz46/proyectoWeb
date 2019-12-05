@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class LoginController
@@ -43,7 +44,12 @@ public class LoginController extends HttpServlet {
 		String contrasena = (String) request.getParameter("contrasena");
 		String idioma = (String) request.getParameter("idioma");
 		String recuerdame = (String) request.getParameter("recuerdame");
-		System.out.println(recuerdame);
+		if (recuerdame==null) {
+			recuerdame="no";
+		}else {
+			recuerdame="si";
+		}
+		
 		
 		/*
 		 * Creamos una variable para guardar el mensaje de bienvenida dependiendo del idioma
@@ -53,7 +59,20 @@ public class LoginController extends HttpServlet {
 		String mensajeBienvenida = "";
 
 		if ("admin".equalsIgnoreCase(nombre) && "admin".equalsIgnoreCase(contrasena)) {
-			// erequest.setAttribute("recuerdame", );
+			
+			
+			//Recuperar la session del usuario == navegador
+			
+			HttpSession session = request.getSession();
+			
+			//Guardamos un atributo en la sesión
+			session.setAttribute("usuarioLogeado", "Administrador");
+			session.setAttribute("idioma", idioma);
+			
+			
+			//Establecemos un valor máximo de tiempo de sesión
+			session.setMaxInactiveInterval(-1); //5S
+			
 			switch (idioma) {
 			case "castellano":
 				mensajeBienvenida = "Hola " + nombre + ", bienvenido a la web. ";
